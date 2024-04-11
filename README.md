@@ -6,6 +6,11 @@
 
 Welcome to Optimism Deathmatch, the ultimate competitive gaming experience powered by the cutting-edge MUD framework and deployed on the Optimism network. Prepare yourself for fast-paced gameplay, advanced features, and a seamless gaming experience like never before. :video_game:
 
+![image](https://github.com/ayush4003/optimism-unitySDK/assets/158837482/09a18661-6867-4b32-8dd2-a751264c1511)
+![image](https://github.com/ayush4003/optimism-unitySDK/assets/158837482/bbdc8ab5-0811-4569-9067-cca012273656)
+
+
+
 ## Features :rocket:
 
 * Optimism Deathmatch is a game-changing project that combines the power of cutting-edge technologies to deliver an immersive and exhilarating gaming experience. 🚀
@@ -25,6 +30,9 @@ Welcome to Optimism Deathmatch, the ultimate competitive gaming experience power
 ## Smart Contract: LeaderboardCounterSystem :trophy:
 
 The ```LeaderboardCounterSystem``` smart contract is an integral part of the Optimism Deathmatch game. It manages player statistics and the global leaderboard, allowing players to track their progress and compete with others. The contract utilizes the ```IncrementSystem``` contract to provide atomic increment operations for counting player actions.
+![image](https://github.com/ayush4003/optimism-unitySDK/assets/158837482/c763becc-ad9c-4836-b45a-aeec3774f13f)
+![image](https://github.com/ayush4003/optimism-unitySDK/assets/158837482/71872b13-b816-4fe0-b839-a7a9e4c49817)
+
 
 ```solidity
 solidityCopy code
@@ -176,6 +184,12 @@ The `HallOfReflections` contract allows users to mint reflections of their owned
 To mint a reflection, users must own the corresponding ERC-721 or ERC-1155 NFT. The `mintReflection` function creates a reflection token by generating a unique reflectionTokenId based on the current timestamp, the caller's address, the NFT contract address, and the NFT token ID. The reflection data, including the owner, the reflection token ID, the NFT contract address, the NFT token ID, the avatar file, and the character bio, are stored in the `reflections` mapping.
 
 Users can interact with a reflection by calling the `interactWithReflection` function and providing the reflectionTokenId. This function increments the interaction count in the Hall of Fame for the corresponding reflection and calls the `generateResponse` function of the `InteractWithReflectionSystem` contract to generate a response based on the character bio.
+
+
+![image](https://github.com/ayush4003/optimism-unitySDK/assets/158837482/f8c7c9e8-f9ee-4f40-9fa4-9e3d23fa5ea1)
+![image](https://github.com/ayush4003/optimism-unitySDK/assets/158837482/b34857df-65d4-47e9-8aee-fd40258d9db5)
+
+
 
 <aside>
 💡 `MintReflectionSystem` and `InteractWithReflectionSystem` contracts, which handle the minting of reflections and the generation of responses, respectively. We need to make sure to deploy and connect these contracts before interacting with the `HallOfReflections` contract.
